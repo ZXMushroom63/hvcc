@@ -1,6 +1,6 @@
 {{ copyright }}
 
-var audioWorkletSupported = (typeof AudioWorklet === 'function');
+var audioWorkletSupported = (typeof AudioWorklet === 'function') && location.protocol !== "file:";
 
 /*
  * AudioLibLoader - Convenience functions for setting up the web audio context
