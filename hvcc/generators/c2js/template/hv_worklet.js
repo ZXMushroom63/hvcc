@@ -352,7 +352,7 @@ function sendMidiOut(sendName, msg) {
               [_hv_msg_getFloat(msg, 0), _hv_msg_getFloat(msg, 1)] :
               [_hv_msg_getFloat(msg, 0), _hv_msg_getFloat(msg, 1), _hv_msg_getFloat(msg, 2)];
           default:
-              console.warn(`Unhandled sendName: ${sendName}`);
+              //console.warn(`Unhandled sendName: ${sendName}`);
               return [];
   }
 }
